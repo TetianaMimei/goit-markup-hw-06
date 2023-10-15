@@ -122,6 +122,8 @@
           <ul class="team-list">
             <li class="team-items">
               <img
+              srcset="./images/guerrero.jpg 1x,
+              ./images/guerrero-2x.jpg 2x"
                 src="./images/guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -164,6 +166,8 @@
             </li>
             <li class="team-items">
               <img
+              srcset="./images/ford.jpg 1x,
+              ./images/ford-2x.jpg 2x"
                 src="./images/ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -206,6 +210,8 @@
             </li>
             <li class="team-items">
               <img
+              srcset="./images/garcia.jpg 1x,
+              ./images/garcia-2x.jpg 2x"
                 src="./images/garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -248,6 +254,8 @@
             </li>
             <li class="team-items">
               <img
+              srcset="./images/wilson.jpg 1x,
+              ./images/wilson-2x.jpg 2x"
                 src="./images/wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -291,18 +299,22 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="portfolio" id="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="overlay-container">
-                <img
-                src="./images/banking-app.jpg"
-                alt="banking app"
-                width="360"
-                class="portfolio-img"
-              />
+                <picture>
+                  <source 
+                  srcset="./images/banking-app.jpg 1x, ./images/banking-app-2x.jpg 2x"
+                  media="(min-width: 1158px)"/>
+                  <source srcset="./images/banking-app-tab.jpg 1x, ./images/banking-app-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)" />
+                  <source srcset="./images/banking-app-mob.jpg 1x, ./images/banking-app-mob-2x.jpg 2x" 
+                  media="(min-width: 320px)" />
+                  <img src="./images/banking-app.jpg" alt="banking app" width="360" class="portfolio-img" />
+                </picture>
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                 Cloud Storage App
@@ -315,12 +327,12 @@
             </li>
             <li class="portfolio-item">
               <div class="overlay-container">
-                <img
-                src="./images/cashless.jpg"
-                alt="telephon and terminal"
-                width="360"
-                class="portfolio-img"
-              />
+                <picture>
+                  <source srcset="./images/cashless.jpg 1x, ./images/cashless-2x.jpg 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/cashless-tab.jpg 1x, ./images/cashless-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/cashless-mob.jpg 1x, ./images/cashless-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/cashless.jpg" alt="telephon and terminal" width="360" class="portfolio-img" />
+                </picture>
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 ·
@@ -334,12 +346,12 @@
             </li>
             <li class="portfolio-item">
               <div class="overlay-container">
-                <img
-                src="./images/meditation-app.jpg"
-                alt="computer with telephon"
-                width="360"
-                class="portfolio-img"
-              />
+                <picture>
+                  <source srcset="./images/meditation-app.jpg 1x, ./images/meditation-app-2x.jpg 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/meditation-app-tab.jpg 1x, ./images/meditation-app-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/meditation-app-mob.jpg 1x, ./images/meditation-app-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/meditation-app.jpg" alt="computer with telephon" width="360" class="portfolio-img" />
+                </picture>
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 ·
@@ -353,12 +365,14 @@
             </li>
             <li class="portfolio-item">
               <div class="overlay-container">
-                <img
-                src="./images/taxi-ser.jpg"
-                alt="car steering wheel"
-                width="360"
-                class="portfolio-img"
-              />
+                <picture>
+                  <source srcset="./images/taxi-ser.jpg 1x, ./images/taxi-ser-2x.jpg 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/taxi-ser-tab.jpg 1x, ./images/taxi-ser-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source srcset="./images/taxi-ser-mob.jpg 1x, ./images/taxi-ser-mob-2x.jpg 2x"
+                    media="(max-width: 767px)" />
+                  <img src="./images/taxi-ser.jpg" alt="car steering wheel" width="360" class="portfolio-img" />
+                </picture>
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 ·
@@ -372,12 +386,14 @@
             </li>
             <li class="portfolio-item">
               <div class="overlay-container">
-                <img
-                src="./images/illustrations.jpg"
-                alt="screen illustrations"
-                width="360"
-                class="portfolio-img"
-              />
+                <picture>
+                  <source srcset="./images/illustrations.jpg 1x, ./images/illustrations-2x.jpg 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/illustrations-tab.jpg 1x, ./images/illustrations-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source srcset="./images/illustrations-mob.jpg 1x, ./images/illustrations-mob-2x.jpg 2x"
+                    media="(max-width: 767px)" />
+                  <img src="./images/illustrations.jpg" alt="screen illustrations" width="360" class="portfolio-img" />
+                </picture>
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 ·
@@ -391,12 +407,12 @@
             </li>
             <li class="portfolio-item">
               <div class="overlay-container">
-                <img
-                src="./images/online-courses.jpg"
-                alt="happy woman"
-                width="360"
-                class="portfolio-img"
-              />
+                <picture>
+                  <source srcset="./images/online-courses.jpg 1x, ./images/online-courses-2x.jpg 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/online-courses-tab.jpg 1x, ./images/online-courses-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/online-courses-mob.jpg 1x, ./images/online-courses-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/online-courses.jpg" alt="happy woman" width="360" class="portfolio-img" />
+                </picture>
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 ·
@@ -410,7 +426,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer" id="footer">
       <div class="container footer-container">
