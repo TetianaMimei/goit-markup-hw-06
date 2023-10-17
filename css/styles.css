@@ -673,10 +673,6 @@ background-color: #4D5AE5;
 }
 
 
-/* .footer-container-logo {
-  flex-grow: 1;
-
-} */
 
 .footer-form {
   display: flex;
@@ -1007,6 +1003,7 @@ background-color: #4D5AE5;
     align-items: center;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
   }
 
     .header-menu {
