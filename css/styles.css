@@ -1001,9 +1001,7 @@ background-color: #4D5AE5;
   .header-navig {
     display: flex;
     align-items: center;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+    justify-content: space-between;
   }
 
     .header-menu {
