@@ -197,7 +197,14 @@ display: none;
     justify-content: center;
     padding: 0;
     cursor: pointer;
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .menu-close-btn:hover,
+    .menu-close-btn:focus {
+      background-color: #404bbf;
+      border: none;
+    }
 
 .mob-container {
   flex-grow: 1;
@@ -273,7 +280,15 @@ color: #434455;
       align-items: center;
       justify-content: center;
       border-radius: 50%;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.mob-icon-link:hover,
+.mob-icon-link:focus {
+  background-color: #404bbf;
+}
+
+
 
 .mob-icon-team {
   fill: #F4F4FD;
@@ -283,8 +298,8 @@ color: #434455;
 
 .title {
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob.jpg);
-  max-width: 320px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tab.jpg);
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -296,7 +311,7 @@ color: #434455;
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .title {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob-2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tab-2x.jpg);
   }
 }
 
@@ -655,9 +670,6 @@ background-color: #4D5AE5;
   flex-direction: column;
   gap: 72px;
   
-  /* align-items: baseline;
-  justify-content: space-between;
-  gap: 80px; */
 }
 
 
@@ -687,6 +699,7 @@ background-color: #4D5AE5;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  flex-shrink: 0;
   width: 288px;
   height: 40px;
   border-radius: 4px;
@@ -768,8 +781,8 @@ background-color: #4D5AE5;
 }
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
     background: #FCFCFC;
     position: absolute;
@@ -863,6 +876,7 @@ background-color: #4D5AE5;
   min-width: 169px;
   height: 56px;
   cursor: pointer;
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -942,6 +956,7 @@ background-color: #4D5AE5;
     line-height: 1.17;
     letter-spacing: 0.04em;
     align-items: center;
+    display: flex;
 }
 
 .check-link {
@@ -963,6 +978,7 @@ background-color: #4D5AE5;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  flex-shrink: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1070,6 +1086,49 @@ background-color: #4D5AE5;
     flex-basis: calc((100% - 24px) / 2);
   }
 
+    .footer .container {
+      max-width: 496px;
+    }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+
+    .footer-form {
+      display: flex;
+      flex-wrap: none;
+      gap: 24px;
+    }
+
+    .footer-logo-all {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+    }
+
+    .footer-text {
+      max-width: 264px;
+    }
+    
+    .footer-form-title {
+      text-align: start;
+    }
+
+    .footer-title-icon {
+      text-align: start;
+    }
+
+    .modal {
+      width: 408px;
+      min-height: 584px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1165,5 +1224,32 @@ background-color: #4D5AE5;
 
     .overlay {
       display: flex;
+    }
+
+    .footer .container {
+      max-width: 1128px;
+    }
+
+    .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+    .footer-container-logo {
+      flex-grow: 1;
+    }
+
+    .footer-form {
+      flex-wrap: nowrap;
+    }
+
+    .footer-form-input {
+      border: 1px solid  #FFF;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      opacity: 1;
     }
 }
